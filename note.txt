@@ -57,9 +57,11 @@ query {
 npm i graphql-yoga
 
 npm i nodemon -g
-
 npm i babel-node --dev
-
 npm i babel-cli -g --ignore-engines
-
 npm i babel-cli babel-preset-env babel-preset-stage-3 --dev
+
+schema.graphql
+여기에 사용자가 뭘 할지에 대해서 정의를 한다.
+db에서 정보를 얻는걸 Query라 부름 --> 정보를 받을때만 쓰임
+Mutation은 정보를 변형할때(db, 메모리에서 정보를 바꾸는 작업을 할때)
