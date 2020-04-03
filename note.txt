@@ -76,3 +76,6 @@ schema.graphql 에서 무슨 일이 벌어지는지 설명
 resolvers.js에서 함수로 이를 실행시킴
 
 mutation은 db의 상태가 변할때 사용하는것
+
+영화 정보를 받을때 Query,
+DB의 상태를 바꿀때 Mutation
