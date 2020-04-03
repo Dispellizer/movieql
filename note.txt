@@ -1,0 +1,5 @@
+graphql-yoga는 create-react-app과 비슷하게 GraphQL 프로젝트를 빠르게 시작할수 있다.
+
+git init .
+git remote add origin https://github.com/Dispellizer/movieql
+git pull origin master
