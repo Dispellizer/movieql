@@ -79,3 +79,5 @@ mutation은 db의 상태가 변할때 사용하는것
 
 영화 정보를 받을때 Query,
 DB의 상태를 바꿀때 Mutation
+
+npm i node-fetch
