@@ -3,3 +3,53 @@ graphql-yoga는 create-react-app과 비슷하게 GraphQL 프로젝트를 빠르�
 git init .
 git remote add origin https://github.com/Dispellizer/movieql
 git pull origin master
+
+GraphQL로 해결할수 있는 문제들
+Over-fetching - 요청한 영역의 정보보다 많은 정보를 서버에서 받는것
+나는 성만 필요한데 이름, 직장, 전화번호 등등을 보내주는것
+이것을 성만 요구할수 있다.
+
+Under-fetching
+인스타 그램의 경우 실행하면 3가지 요청이 실행됨
+/feed/
+/notifications/
+/user/1/
+요청이 3번 오고 가야 앱이 시작된다.
+rest에서 하나를 완성하려고 많은 소스를 요청하게 된다. 
+한 query에 정확하게 원하는 정보만 받을수 있도록 할수있다.
+
+query {
+    feed {
+        comments
+        likeNumber
+    }
+    notifications {
+        isRead
+    }
+    user {
+        username
+        profilePic
+    }
+}
+
+{
+    feed: [
+        {
+            comments: 1,
+            likeNumber: 20
+        }
+    ],
+    notifications: [
+        {
+            isRead: true
+        },
+        {
+            isRead: false
+        }
+    ],
+    user: {
+        username: "Dispel"
+        profile: "http"
+    }
+}
+위가 graphQL query, 아래가 자바스크립트에서 받는것
