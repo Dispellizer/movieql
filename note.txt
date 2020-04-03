@@ -65,3 +65,6 @@ schema.graphql
 여기에 사용자가 뭘 할지에 대해서 정의를 한다.
 db에서 정보를 얻는걸 Query라 부름 --> 정보를 받을때만 쓰임
 Mutation은 정보를 변형할때(db, 메모리에서 정보를 바꾸는 작업을 할때)
+
+resolvers는 query를 해결하는것
+query는 db에게는 문제같은것, 우리는 이 query를 어떤방식으로 resolve해야한다.
