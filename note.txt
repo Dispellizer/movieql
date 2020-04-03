@@ -53,3 +53,13 @@ query {
     }
 }
 위가 graphQL query, 아래가 자바스크립트에서 받는것
+
+npm i graphql-yoga
+
+npm i nodemon -g
+
+npm i babel-node --dev
+
+npm i babel-cli -g --ignore-engines
+
+npm i babel-cli babel-preset-env babel-preset-stage-3 --dev
