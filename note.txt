@@ -68,3 +68,11 @@ Mutation은 정보를 변형할때(db, 메모리에서 정보를 바꾸는 작�
 
 resolvers는 query를 해결하는것
 query는 db에게는 문제같은것, 우리는 이 query를 어떤방식으로 resolve해야한다.
+
+Operation(db.js)에서 data가 어떻게 보일지 정의하고
+질문을 resolve(해결)하는 함수를 만든다.
+
+schema.graphql 에서 무슨 일이 벌어지는지 설명
+resolvers.js에서 함수로 이를 실행시킴
+
+mutation은 db의 상태가 변할때 사용하는것
